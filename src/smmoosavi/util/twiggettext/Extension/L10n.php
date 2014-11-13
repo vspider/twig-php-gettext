@@ -33,7 +33,7 @@ class Extension_L10n extends \Twig_Extension
         return array(
             'trans' => new \Twig_Filter_Function('\\smmoosavi\\util\\gettext\\L10n::gettext'),
             '__' => new \Twig_Filter_Function('\\smmoosavi\\util\\gettext\\L10n::gettext'),
-	    '__n' => new \Twig_Filter_Function('\\smmoosavi\\util\\gettext\\L10n:ngettext')
+		'__n' => new \Twig_Filter_Function('\\smmoosavi\\util\\gettext\\L10n::ngettext')
         );
     }
 
@@ -42,7 +42,7 @@ class Extension_L10n extends \Twig_Extension
         return array(
             'trans' => new \Twig_Function_Function('\\smmoosavi\\util\\gettext\\L10n::gettext'),
             '__' => new \Twig_Function_Function('\\smmoosavi\\util\\gettext\\L10n::gettext'),
-	    '__n' => new \Twig_Function_Function('\\smmoosavi\\util\\gettext\\L10n::ngettext')
+		'__n' => new \Twig_Function_Function('\\smmoosavi\\util\\gettext\\L10n::ngettext')
         );
     }
 
